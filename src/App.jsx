@@ -6,6 +6,7 @@ const App = () => {
     <div className='m-4 p-4'>
       <h1 className='text-2xl'><center><b><i>My Daily Todo List</i></b></center></h1>
       <TodoList />
+      
     </div>
   );
 };

@@ -1,12 +1,57 @@
-# React + Vite
+# My ToDo List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My ToDo List
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+My Every day My ToDo List (task Note)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+### List of Task
+
+* Create Redux  API Call
+* using Draggabl package
+* using ReactDom
+* 
+
+### Using Function
+
+* EDIT the task
+* REMOVE the TASK
+* VIEW the task Deails
+* DRAG AND DROP  the contant
+* CREATE the New Task
+
+```
+code blocks for commands
+```
+
+## Help
+
+Any advise for common problems or issues.
+```
+command to run if program contains helper info
+```
+
+## Authors
+
+Contributors names and contact info
+
+ex. Kannan
+ex. [@kannan](kannan11071985@gmail.com)
+
+## Version History
+
+* 0.2
+    * Various bug fixes and optimizations
+    * See [commit change]() or See [release history]()
+* 0.1
+    * Initial Release
+
+## License
+
+
+
