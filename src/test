@@ -1,0 +1,45 @@
+ <div>
+      <h2>Todo List</h2>
+
+      <input className='w-[900px] h-[30px]'
+        value={input}
+        onChange={e => setInput(e.target.value)}
+        placeholder="Enter new task"
+      />
+      <button onClick={handleAdd}>Add</button>
+
+     <div className=' shadow-xl/30 bg-gray-100 p-5 m-5 '>
+         <ul style={{ listStyle: 'none', padding: 0 }}>
+        {todos.map(todo => (
+          <li className=' bg-gray-200 p-5 m-5' key={todo.id} >
+            {editingId === todo.id ? (
+              <>
+                <input className='w-[900px] h-[30px]'
+                  value={editInput}
+                  onChange={e => setEditInput(e.target.value)}
+                />
+                <button onClick={() => handleUpdate(todo.id)}>Save</button>
+                <button onClick={() => setEditingId(null)}>Cancel</button>
+              </>
+            ) : (
+              <>
+                <span
+                  onClick={() => dispatch(toggleTodo(todo.id))}
+                  style={{
+                    textDecoration: todo.completed ? 'line-through' : 'none',
+                    cursor: 'pointer',
+                    marginRight: '10px',
+                  }}
+                >
+                  {todo.text}
+                </span>
+                <button onClick={() => handleEdit(todo.id, todo.text)}>✏️ Edit</button>
+                <button onClick={() => dispatch(deleteTodo(todo.id))}>❌ Remove</button>
+                <button onClick={() => handleView(todo)}>👁️ View</button>
+              </>
+            )}
+          </li>
+        ))}
+      </ul>
+     </div>
+    </div>
